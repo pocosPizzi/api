@@ -11,4 +11,8 @@ public class EmailService {
 	public void sendEmail() {
 		
 	}
+	
+	public void createEmail() {
+		
+	}
 }
