@@ -24,7 +24,7 @@ public class EmailService {
 		message.setSubject("Você tem um novo orçamento para avaliar de: "
 				.concat(dto.getName()+"."));
 				
-        message.setText("Menssage: ".concat(dto.getMessage())+". Nome: ".concat(dto.getName())+", Email:".concat(dto.getEmail())+", Telefone: ".concat(dto.getPhone()));
+        message.setText("Menssagem: ".concat(dto.getMessage())+". Nome: ".concat(dto.getName())+", Email:".concat(dto.getEmail())+", Telefone: ".concat(dto.getPhone()));
         message.setTo("pocosartesianospizzi@gmail.com");
         message.setFrom("pocosartesianospizzi@gmail.com");
 
