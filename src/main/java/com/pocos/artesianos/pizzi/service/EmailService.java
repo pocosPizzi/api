@@ -22,10 +22,11 @@ public class EmailService {
 	public String sendEmail(BudgetReqDTO dto) {
 		SimpleMailMessage message = new SimpleMailMessage();
 		message.setSubject("Você tem um novo orçamento para avaliar de: "
-				.concat(dto.getName())
-				.concat(", com email :")
-				.concat(dto.getEmail()).concat(", telefone:").concat(dto.getPhone()));
+				.concat(dto.getName()+"."));
+				
         message.setText("Menssage: ".concat(dto.getMessage()));
+        message.setText("Email :".concat(dto.getEmail()));
+        message.setText("Telefone :".concat(dto.getPhone()));
         message.setTo("pocosartesianospizzi@gmail.com");
         message.setFrom("pocosartesianospizzi@gmail.com");
 
